@@ -252,7 +252,7 @@ class S3(object):
     def __init__(self, config):
         self.config = config
         self.fallback_to_signature_v2 = False
-        self.endpoint_requires_signature_v4 = False
+        self.endpoint_requires_signature_v4 = True
         self.expect_continue_not_supported = False
 
     def storage_class(self):
